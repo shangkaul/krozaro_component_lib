@@ -8,6 +8,7 @@
   --font-secondary: Montserrat, sans-serif;
 
   /* set base values */
+  font-size: 16px;
   --text-base-size: 1em;
   --text-scale-ratio: 1.2;
 
@@ -34,6 +35,9 @@
   --gray-2: #d1d0d2;
   --gray-1: #e8e7e8;
   --white: white;
+  --btn-active: #1e58ff;
+
+  --color-primary: dodgerblue;
 
   /* spacing */
   --space-unit: 1em;
@@ -42,7 +46,37 @@
   --space-md: calc(1.25 * var(--space-unit));
   --space-lg: calc(2 * var(--space-unit));
 }
+.btn {
+  display: inline-flex;
+  position: relative;
+  white-space: nowrap;
+  text-decoration: none;
+  line-height: 1;
 
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: 5px;
+  border: 0;
+  font-size: var(--text-base-size);
+  color: white;
+  background-color: var(--color-primary);
+
+  transition: 0.2s;
+}
+.btn > .icon {
+  /* icon inherits color of button label */
+  color: inherit;
+  flex-shrink: 0;
+}
+.btn:active {
+  background-color: var(--btn-active);
+}
+.btn-full-width {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+/* btn end */
 body {
   font-size: var(--text-base-size);
   font-family: var(--font-primary);
@@ -54,6 +88,38 @@ body {
 }
 
 /* ------------utility end-------- */
+/*---- components start ------ */
+.avatar {
+  width: 6.25 rem;
+  height: 6.25 rem;
+  border-radius: 50%;
+  padding: 0;
+  border: 0.5rem solid var(--color-primary);
+}
+.container {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  padding: var(--space-sm);
+  background-color: white;
+  border-radius: 5px;
+}
+.alert {
+  position: absolute;
+  width: 50vw;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  top: 25%;
+  margin: 0 auto;
+  max-width: 20rem;
+  box-shadow: 0 0 0 1600px rgba(0, 0, 0, 0.65);
+  display: flex;
+  flex-direction: column;
+}
+.container-title {
+  font-family: var(--font-secondary);
+  font-weight: 600;
+  font-size: var(--text-md);
+}
 /* nav {
   display: flex;
   align-items: center;
