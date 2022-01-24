@@ -53,34 +53,54 @@
   text-decoration: none;
   line-height: 1;
 
-  padding: var(--space-xs) var(--space-sm);
+  padding: var(--space-sm);
   border-radius: 5px;
   border: 0;
   font-size: var(--text-base-size);
   color: white;
+  margin: var(--space-xs);
   background-color: var(--color-primary);
-
+  cursor: pointer;
   transition: 0.2s;
 }
 .btn > .icon {
   /* icon inherits color of button label */
   color: inherit;
   flex-shrink: 0;
+  font-size: var(--text-base-size);
+  margin: 0;
+  /* margin-right: var(--space-xs); */
 }
-.btn:active {
+.btn:hover {
   background-color: var(--btn-active);
+}
+.link-btn:hover {
+  text-decoration: underline;
 }
 .btn-full-width {
   display: flex;
   width: 100%;
   justify-content: center;
 }
-
+.btn-link {
+  background-color: transparent;
+  color: blue;
+}
+.btn-link:hover {
+  background-color: transparent;
+}
+.btn-float {
+  position: fixed;
+  bottom: 0;
+  right: var(--space-sm);
+}
 /* btn end */
 body {
   font-size: var(--text-base-size);
   font-family: var(--font-primary);
   color: var(--color-text);
+  max-width: 1200px;
+  margin: auto;
 }
 * {
   box-sizing: border-box;
@@ -98,8 +118,7 @@ body {
 }
 
 .avatar > img {
-  width: 6rem;
-  height: 6rem;
+  aspect-ratio: 1;
   border-radius: 50%;
   padding: 0;
 }
@@ -110,6 +129,7 @@ body {
   border-radius: 5px;
   margin: var(--space-md);
   padding: var(--space-sm);
+  overflow: hidden;
 }
 .alert {
   position: absolute;
@@ -157,6 +177,39 @@ body {
   top: -0.5rem;
   right: -0.5rem;
   border: 0.3rem solid white;
+}
+
+/* --------textbox---------- */
+.textbox {
+  padding: var(--space-sm);
+  border-radius: 5px;
+  display: block;
+  margin: var(--space-sm);
+}
+
+.textbox:focus {
+  outline: none;
+}
+
+.textbox-success {
+  outline: 1px solid var(--color-success);
+  border: 1px solid var(--color-success);
+  color: var(--color-success);
+}
+.textbox-fail {
+  outline: 1px solid var(--color-error);
+  border: 1px solid var(--color-error);
+  color: var(--color-error);
+}
+
+/* -------------img------------- */
+img {
+  inline-size: 100%;
+  block-size: auto;
+}
+.img-round {
+  border-radius: 50%;
+  aspect-ratio: 1;
 }
 /* nav {
   display: flex;
