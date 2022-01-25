@@ -1,7 +1,6 @@
 /* ------------utilities start */
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&family=Roboto+Condensed&display=swap");
-
 /* -----typography---------- */
 :root {
   --font-primary: Roboto, sans-serif;
@@ -122,14 +121,14 @@ body {
   border-radius: 50%;
   padding: 0;
 }
-.container {
+.container,
+.card {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   padding: var(--space-sm);
   background-color: white;
   border-radius: 5px;
   margin: var(--space-md);
   padding: var(--space-sm);
-  overflow: hidden;
 }
 .alert {
   position: absolute;
@@ -145,14 +144,17 @@ body {
   flex-direction: column;
 }
 
-.container-title {
+.container-title,
+.card-title {
   font-family: var(--font-secondary);
   font-weight: 600;
   font-size: var(--text-md);
   padding: var(--space-sm);
 }
 .container-content,
-.container-footer {
+.container-footer,
+.card-footer,
+.card-content {
   padding: var(--space-sm);
 }
 .icon {
@@ -177,6 +179,7 @@ body {
   top: -0.5rem;
   right: -0.5rem;
   border: 0.3rem solid white;
+  z-index: 999;
 }
 
 /* --------textbox---------- */
@@ -210,6 +213,61 @@ img {
 .img-round {
   border-radius: 50%;
   aspect-ratio: 1;
+}
+/*-------------------- cards----------------- */
+.card {
+  display: flex;
+  max-width: 25rem;
+  flex-direction: column;
+  position: relative;
+}
+.card-img {
+  display: none;
+}
+.card-footer {
+  display: flex;
+  flex-direction: row;
+  color: var(--color-primary);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.card > .badge {
+  visibility: hidden;
+}
+.card-badge > .badge {
+  visibility: unset;
+  top: -1rem;
+  right: -1rem;
+}
+.card-footer > span {
+  padding: var(--space-xs);
+  transition: 0.2s;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 0 var(--space-xs);
+}
+.card-footer > span:hover {
+  background-color: var(--gray-1);
+}
+.icon-bar {
+  color: var(--gray-6);
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-grow: 1;
+}
+.icon-bar > i {
+  padding: var(--space-xs);
+  transition: 0.2s;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.icon-bar > i:hover {
+  background-color: var(--gray-1);
+}
+.img-card > .card-img {
+  display: unset;
 }
 /* nav {
   display: flex;
