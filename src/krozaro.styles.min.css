@@ -1,0 +1,111 @@
+@import url("components/alert/alert.css");
+@import url("components/avatar/avatar.css");
+@import url("components/badge/badge.css");
+@import url("components/button/button.css");
+@import url("components/card/card.css");
+@import url("components/image/image.css");
+@import url("components/textbox/textbox.css");
+
+
+/* ------------utilities start */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&family=Roboto+Condensed&display=swap");
+/* -----typography---------- */
+:root {
+  --font-primary: Roboto, sans-serif;
+  --font-secondary: Montserrat, sans-serif;
+
+  /* set base values */
+  font-size: 16px;
+  --text-base-size: 1em;
+  --text-scale-ratio: 1.2;
+
+  --text-sm: calc(var(--text-base-size) / var(--text-scale-ratio));
+  --text-md: calc(var(--text-base-size) * var(--text-scale-ratio));
+  --text-lg: calc(
+    var(--text-base-size) * var(--text-scale-ratio) * var(--text-scale-ratio)
+  );
+  --text-xl: calc(
+    var(--text-base-size) * var(--text-scale-ratio) * var(--text-scale-ratio) *
+      var(--text-scale-ratio)
+  );
+
+  /* colors */
+  --color-success: #88c459;
+  --color-error: #f5414f;
+  --color-warning: #ffd137;
+
+  --black: #1d1d21;
+  --gray-10: #2e2e31;
+  --gray-6: #7b7a7d;
+  --gray-4: #a5a5a6;
+  --gray-3: #bbbbbc;
+  --gray-2: #d1d0d2;
+  --gray-1: #e8e7e8;
+  --white: white;
+  --btn-active: #1e58ff;
+
+  --color-primary: dodgerblue;
+
+  /* spacing */
+  --space-unit: 1em;
+  --space-xs: calc(0.5 * var(--space-unit));
+  --space-sm: calc(0.75 * var(--space-unit));
+  --space-md: calc(1.25 * var(--space-unit));
+  --space-lg: calc(2 * var(--space-unit));
+}
+
+body {
+  font-size: var(--text-base-size);
+  font-family: var(--font-primary);
+  color: var(--color-text);
+  max-width: 1200px;
+  margin: auto;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.icon {
+  /* font-size: var(--text-lg); */
+  font-size: 6rem;
+  width: fit-content;
+  position: relative;
+}
+.icon-bar {
+  color: var(--gray-6);
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-grow: 1;
+}
+.icon-bar > i {
+  padding: var(--space-xs);
+  transition: 0.2s;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.icon-bar > i:hover {
+  background-color: var(--gray-1);
+}
+/* nav {
+  display: flex;
+  align-items: center;
+  background-color: dodgerblue;
+  color: white;
+  padding: 1em;
+}
+
+.logo {
+  font-size: 2em;
+  font-weight: 600;
+  margin-right: auto;
+}
+
+.navList {
+  display: flex;
+  justify-content: space-around;
+  width: 30vw;
+} */

@@ -1,0 +1,22 @@
+  .textbox {
+    padding: var(--space-sm);
+    border-radius: 5px;
+    display: block;
+    margin: var(--space-sm);
+  }
+  
+  .textbox:focus {
+    outline: none;
+  }
+  
+  .textbox-success {
+    outline: 1px solid var(--color-success);
+    border: 1px solid var(--color-success);
+    color: var(--color-success);
+  }
+  .textbox-fail {
+    outline: 1px solid var(--color-error);
+    border: 1px solid var(--color-error);
+    color: var(--color-error);
+  }
+  
