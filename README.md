@@ -1,2 +1,2 @@
 # krozaro_component_lib
-Created with CodeSandbox
+Krozaro Component Lib Home
