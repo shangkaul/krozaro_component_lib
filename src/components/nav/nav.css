@@ -21,6 +21,7 @@ nav{
 
 .start{
     margin-right: auto;
+    margin-left: var(--space-sm);
 }
 
 .nav-group>li{
@@ -36,8 +37,14 @@ cursor: pointer;
 .nav-active{
     color: var(--color-primary);
     border-bottom: 2px solid var(--color-primary);
+    pointer-events: none;
+
 }
-.nav-active:hover{
+li.nav-active:hover{
     color: var(--color-primary);
     cursor: pointer;
+}
+
+li>i{
+    font-size: var(--text-lg);
 }

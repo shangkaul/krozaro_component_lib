@@ -9,6 +9,7 @@
 
 
 /* ------------utilities start */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 /* -----typography---------- */
@@ -23,7 +24,7 @@
 
   --text-xs: calc(0.5 * var(--text-base-size));
   --text-sm: var(--text-base-size);
-  --text-md: calc(1.5 * var(--text-base-size));
+  --text-md: calc(1.25 * var(--text-base-size));
   --text-lg: calc(2 * var(--text-base-size));
   --text-xl: calc(3 * var(--text-base-size));
 
@@ -100,11 +101,53 @@ h5{
   line-height: var(--space-sm);
 
 }
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
+}
 .icon {
   /* font-size: var(--text-lg); */
-  font-size: 6rem;
   width: fit-content;
   position: relative;
+}
+.icon-xs{
+  font-size: 1rem;
+}
+.icon-sm{
+  font-size: 2rem;
+}
+.icon-md{
+  font-size: 2.5rem;
+}
+.icon-lg{
+  font-size: 3rem;
+}
+.icon-xl{
+  font-size: 5rem;
+}
+
+p.xs{
+  font-size: var(--text-xs);
+  line-height: var(--space-sm)
+}
+p.sm{
+  font-size: var(--text-sm);
+  line-height: var(--space-md)
+}
+p.md{
+  font-size: var(--text-md);
+  line-height: var(--space-lg)
+}
+p.lg{
+  font-size: var(--text-lg);
+  line-height: var(--space-xl)
+}
+p.xl{
+  font-size: var(--text-xl);
+  line-height: var(--space-xxl )
+}
+.highlight{
+  color:var(--color-primary);
 }
 .icon-bar {
   color: var(--gray-6);

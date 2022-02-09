@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="./src/krozaro.styles.min.css" />
     <link rel="stylesheet" href="./styles.css" />
+    <link href="prism/prism.css" rel="stylesheet" />
     <link rel="icon" href="./src/img/favicon.ico" type="image/icon">
   </head>
 
@@ -17,8 +18,8 @@
 
     <div class="sidebar">
 <li class="list-head">Getting Started</li> 
-<li class="active">Introduction</li>
-<li> <a href="./installation.html">Installation</a></li>
+<li><a href="./docs.html">Introduction</a></li>
+<li class="active">Installation</li>
 <li> <a href="./typo.html">Typography</a></li>
 <li> <a href="./theme.html">Theme</a></li>
 
@@ -52,16 +53,26 @@
     </nav>
     <div class="doc-content">
         <section class="component">
-            <h1>Introduction</h1>
-          <p class="md">Krozaro is an open source web component library for building performant, high-quality web apps for mobile and desktop devices. 
-            Getting started with Krozaro is super easy. Head on to the <a href="./installation.html" class="highlight">installation</a> section to know more! </p>  
+            <h1>Installation</h1>
+          <p class="md">Integrating Krozaro UI toolkit in your projects is super easy. Just include the krozaro css file at the top of your HTML source code and you're good to go!
+            Add the the css location enclosed in link tag inside the head section of your HTML source code.
+          </p>  
           </section>
+          <pre>
+          <code class="language-html">
+&lt;head&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://krozaro.netlify.app/src/krozaro.styles.min.css&quot; /&gt;
+&lt;!-- Other imports  --&gt;
+&lt;/head&gt;
+          </code>
+          </pre>
           <footer>
-            <a class="prev" href="./index.html"> Home </a>
-            <a class="next" href="./installation.html"> Installation </a>
+            <a class="prev" href="./docs.html"> Introduction </a>
+            <a class="next" href="./typo.html"> Typography </a>
           </footer>
 </div>
 </main>
+<script src="./prism/prism.js"></script>
   </body>
   
 </html>
