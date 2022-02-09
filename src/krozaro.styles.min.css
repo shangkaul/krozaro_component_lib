@@ -9,7 +9,7 @@
 
 /* ------------utilities start */
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&family=Roboto+Condensed&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 /* -----typography---------- */
 :root {
   --font-primary: Roboto, sans-serif;
@@ -18,17 +18,13 @@
   /* set base values */
   font-size: 16px;
   --text-base-size: 1em;
-  --text-scale-ratio: 1.2;
+  --text-scale-ratio: 2;
 
-  --text-sm: calc(var(--text-base-size) / var(--text-scale-ratio));
-  --text-md: calc(var(--text-base-size) * var(--text-scale-ratio));
-  --text-lg: calc(
-    var(--text-base-size) * var(--text-scale-ratio) * var(--text-scale-ratio)
-  );
-  --text-xl: calc(
-    var(--text-base-size) * var(--text-scale-ratio) * var(--text-scale-ratio) *
-      var(--text-scale-ratio)
-  );
+  --text-xs: calc(0.5 * var(--text-base-size));
+  --text-sm: var(--text-base-size);
+  --text-md: calc(1.5 * var(--text-base-size));
+  --text-lg: calc(2 * var(--text-base-size));
+  --text-xl: calc(3 * var(--text-base-size));
 
   /* colors */
   --color-success: #88c459;
@@ -43,16 +39,30 @@
   --gray-2: #d1d0d2;
   --gray-1: #e8e7e8;
   --white: white;
-  --btn-active: #1e58ff;
+  --btn-active: #64aef8;
+  --btn-disabled: #71a0cf;
 
-  --color-primary: dodgerblue;
+
+  --color-primary: #1e90ff;
+
 
   /* spacing */
   --space-unit: 1em;
   --space-xs: calc(0.5 * var(--space-unit));
-  --space-sm: calc(0.75 * var(--space-unit));
-  --space-md: calc(1.25 * var(--space-unit));
+  --space-sm: var(--space-unit);
+  --space-md: calc(1.5 * var(--space-unit));
   --space-lg: calc(2 * var(--space-unit));
+  --space-xl: calc(2.5 * var(--space-unit));
+  --space-xxl: calc(4 * var(--space-unit));
+
+  /* Border Radius */
+  --base-radius: 5px;
+
+  --radius-sm: var(--base-radius);
+  --radius-md: calc(2* var(--base-radius));
+  --radius-lg: calc(3* var(--base-radius));
+  --radius-full: calc(200* var(--base-radius));
+
 }
 
 body {
@@ -66,6 +76,30 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  letter-spacing : 0.5px;
+}
+h1{
+  font-size: var(--text-xl);
+  line-height: var(--space-xxl);
+}
+h2{
+  font-size: var(--text-lg);
+  line-height: var(--space-xl);
+}
+h3{
+  font-size: var(--text-md);
+  line-height: var(--space-lg);
+
+}
+h4{
+  font-size: var(--text-sm);
+  line-height: var(--space-md);
+
+}
+h5{
+  font-size: var(--text-xs);
+  line-height: var(--space-sm);
+
 }
 .icon {
   /* font-size: var(--text-lg); */
@@ -90,22 +124,3 @@ body {
 .icon-bar > i:hover {
   background-color: var(--gray-1);
 }
-/* nav {
-  display: flex;
-  align-items: center;
-  background-color: dodgerblue;
-  color: white;
-  padding: 1em;
-}
-
-.logo {
-  font-size: 2em;
-  font-weight: 600;
-  margin-right: auto;
-}
-
-.navList {
-  display: flex;
-  justify-content: space-around;
-  width: 30vw;
-} */
