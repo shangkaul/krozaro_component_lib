@@ -1,2 +1,3 @@
-# krozaro_component_lib
-Krozaro Component Lib Home
+# Krozaro
+
+A lean and efficient component library built on vanilla CSS.

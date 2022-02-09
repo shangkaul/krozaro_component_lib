@@ -2,7 +2,7 @@
 body{
     max-width: 100vw;
 }
-main {
+.land-main {
     background-color: var(--color-primary);
     display: grid;
     grid-template-rows: 100vh;
@@ -12,7 +12,7 @@ main {
 }
 
 .hero{
-    color: white;
+    color: var(--white);
     display: grid;
     align-items: center;
     justify-content: center;
@@ -24,7 +24,7 @@ main {
 }
 .hero:last-child{
     background-color: white;
-    color: #445b78;
+    color: var(--gray-text);
 
 }
 .btn-grp{
@@ -70,4 +70,62 @@ a > .btn{
 
 .btn-grp >a{
     text-decoration: none;
+}
+
+.menuGrid{
+    display: grid;
+    grid-template-columns: minmax(auto,1fr) 5fr;
+    height: 100vh;
+    
+}
+.sidebar-container{
+    overflow-x: scroll;
+    display: flex;
+    flex-direction: column;
+   
+}
+.sidebar{
+    border-right: 1px solid var(--gray-1);
+    padding: var(--space-md);    
+}
+.sidebar>li{
+    color: var(--gray-text);
+    list-style: none;
+    border-radius: var(--radius-sm);
+    padding: var(--space-sm);
+}
+.sidebar>li:hover{
+    color: var(--color-primary);
+    cursor: pointer;
+}
+.sidebar>.active{
+    color: var(--color-primary);
+    background-color: #f0f6ff;
+    cursor: pointer;
+}
+.doc-main{
+/* display: grid; */
+overflow-x: scroll;
+border-left: 1px solid var(--gray-1);
+}
+.doc-content{
+padding: var(--space-sm);
+max-width: 900px;
+overflow-wrap: break-word;
+padding-left: 10vw;
+}
+
+.doc-content>.component>p{
+    line-height: 2.5rem;
+}
+
+.docs-logo{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    padding: var(--space-md);
+    padding-bottom: 0;
+    border-right: 1px solid var(--gray-1);
+    
 }

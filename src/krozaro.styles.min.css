@@ -5,6 +5,7 @@
 @import url("components/card/card.css");
 @import url("components/image/image.css");
 @import url("components/textbox/textbox.css");
+@import url("components/nav/nav.css");
 
 
 /* ------------utilities start */
@@ -32,12 +33,10 @@
   --color-warning: #ffd137;
 
   --black: #1d1d21;
-  --gray-10: #2e2e31;
-  --gray-6: #7b7a7d;
-  --gray-4: #a5a5a6;
-  --gray-3: #bbbbbc;
-  --gray-2: #d1d0d2;
-  --gray-1: #e8e7e8;
+  --gray-1: #f3f3f3;
+  --gray-text: #445b78;
+  --light-gray-text: #7a7a7a;;
+
   --white: white;
   --btn-active: #64aef8;
   --btn-disabled: #71a0cf;
