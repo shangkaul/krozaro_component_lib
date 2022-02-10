@@ -86,7 +86,7 @@ a > .btn{
    
 }
 .sidebar{
-    border-right: 1px solid var(--gray-1);
+    border-right: 1px solid var(--color-bg);
     padding: var(--space-md);    
 }
 .sidebar>a>li{
@@ -108,7 +108,7 @@ a > .btn{
 .doc-main{
 /* display: grid; */
 overflow-y: auto;
-border-left: 1px solid var(--gray-1);
+border-left: 1px solid var(--color-bg);
 }
 .doc-content{
 padding: var(--space-sm);
@@ -125,7 +125,7 @@ padding-left: 10vw;
     background-color: var(--white);
     padding: var(--space-md);
     padding-bottom: 0;
-    border-right: 1px solid var(--gray-1);
+    border-right: 1px solid var(--color-bg);
     
 }
 
@@ -185,10 +185,10 @@ footer{
 }
 .demo{
     margin-bottom: var(--space-md);
-    border: 1px solid var(--gray-1);
+    border: 1px solid var(--color-bg);
     padding: var(--space-md);
     text-align:center;
-    background-color: var(--gray-1);
+    background-color: var(--color-bg);
 }
 .color-block{
     width: 100%;
