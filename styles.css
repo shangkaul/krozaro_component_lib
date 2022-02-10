@@ -181,6 +181,7 @@ footer{
 
 .component{
     margin-bottom: var(--space-md);
+    position: relative;
 }
 .demo{
     margin-bottom: var(--space-md);

@@ -1,5 +1,5 @@
 .alert{
-  padding: var(--space-md);
+  padding: var(--space-sm);
   border-radius: var(--radius-md);
   color: white;
   display: flex;

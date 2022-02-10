@@ -3,6 +3,126 @@
   <head>
     <title>Krozaro</title>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../../krozaro.styles.min.css" />
+    <link rel="stylesheet" href="../../../styles.css" />
+    <link href="../../../prism/prism.css" rel="stylesheet" />
+    <link rel="icon" href="../../img/favicon.ico" type="image/icon">
+  </head>
+
+  <body class="menuGrid">
+<aside class="sidebar-container">
+    
+    <a href="../../../index.html" class="docs-logo">
+        <img src="../../img/docs-logo.png"/>
+    </a>
+
+    <div class="sidebar">
+<li class="list-head">Getting Started</li> 
+<a href="../../../docs.html"><li>Introduction</li></a>
+<a href="../../../installation.html"> <li>Installation</li></a>
+ <a href="../../../typo.html"> <li>Typography</li></a>
+ <a href="../../../theme.html"> <li>Theme</li></a>
+
+<li class="list-head">UI Components</li>      
+ <a href="../alert/alert.html"> <li>Alert</li></a>
+
+<a href="../avatar/avatar.html"><li> Avatar</li></a>
+ <a href="../badge/badge.html"> <li  class="active">Badge</li></a>
+ <a href="../button/button.html"> <li>Button</li></a>
+ <a href="../card/card.html"> <li>Card</li></a>
+ <a href="../grid/grid.html"> <li>Grid</li></a>
+ <a href="../image/image.html"> <li>Image</li></a>
+ <a href="../input/input.html"> <li>Input</li></a>
+ <a href="../lists/lists.html"> <li>Lists</li></a>
+ <a href="../modal/modal.html"> <li>Modal</li></a>
+ <a href="../navigation/navigation.html"><li>Navigation</li></a>
+ <a href="../rating/rating.html"> <li>Rating</li></a>
+ <a href="../toast/toast.html"> <li>Toast</li></a>
+</div>
+</aside>
+<main class="doc-main"> 
+    <nav>
+        <ul class="nav-group start">
+          <li> <a href="../../../docs.html">Getting Started</a></li>
+            <li class="nav-active"><a href="../avatar/avatar.html">UI Components</a></li>
+        </ul>
+        <ul class="nav-group end">
+        <li><a href="https://github.com/shangkaul/krozaro_component_lib"><i class="icon icon-md fa fa-github"></i></a></li>
+        <li></li>
+    </ul>
+    
+    </nav>
+    <div class="doc-content">
+        <section class="component">
+            <h1>Badge</h1>
+          <p class="md"> Badges are absolute elements that usually appear near another element. 
+            Typically they contain a number or other characters. Avatar badges can also be used to convey specific information
+            regarding the object in the avatar.
+          </p>  
+          </section>
+
+          <section class="component col">
+            <h2>Avatar Badge</h2>
+            <section class="demo">
+              <div class="flex-row">
+                <div class="avatar avatar-xl"><span class="badge badge-xl badge-inactive"></span><img src="https://picsum.photos/100" /></div>
+                <div class="avatar avatar-lg"><span class="badge badge-lg badge-active"></span><img src="https://picsum.photos/100" /></div>
+                <div class="avatar avatar-md"><span class="badge badge-md"></span><img src="https://picsum.photos/100" /></div>
+                <div class="avatar avatar-sm"><span class="badge badge-sm"></span><img src="https://picsum.photos/100" /></div>
+              </div>
+            </section>
+          </section>
+<pre>
+  <code class="language-html">
+&lt;div class=&quot;avatar avatar-xl&quot;&gt;&lt;img src=&quot;https://picsum.photos/100&quot; /&gt;&lt;/div&gt;
+&lt;div class=&quot;avatar avatar-lg&quot;&gt;&lt;img src=&quot;https://picsum.photos/100&quot; /&gt;&lt;/div&gt;
+&lt;div class=&quot;avatar avatar-md&quot;&gt;&lt;img src=&quot;https://picsum.photos/100&quot; /&gt;&lt;/div&gt;
+&lt;div class=&quot;avatar avatar-sm&quot;&gt;&lt;img src=&quot;https://picsum.photos/100&quot; /&gt;&lt;/div&gt;
+&lt;div class=&quot;avatar avatar-xs&quot;&gt;&lt;img src=&quot;https://picsum.photos/100&quot; /&gt;&lt;/div&gt;
+  </code>
+</pre>
+
+
+<section class="component col">
+  <h2>Icon Badge</h2>
+  <section class="demo">
+    <div class="flex-row">
+      <div class="icon icon-xl"><span class="badge badge-xl">1</span><i class="fa fa-cart-plus"></i></div>
+      <div class="icon icon-lg"><span class="badge badge-lg">2</span><i class="fa fa-cart-plus"></i></div>
+      <div class="icon icon-md"><span class="badge badge-md">3</span><i class="fa fa-cart-plus"></i></div>
+      <div class="icon icon-sm"><span class="badge badge-sm">4</span><i class="fa fa-cart-plus"></i></div>
+    </div>
+  </section>
+</section>
+<pre>
+<code class="language-html">
+&lt;div class=&quot;avatar-text avatar-xl&quot;&gt;SK&lt;/div&gt;
+&lt;div class=&quot;avatar-text avatar-lg&quot;&gt;SK&lt;/div&gt;
+&lt;div class=&quot;avatar-text avatar-md&quot;&gt;SK&lt;/div&gt;
+&lt;div class=&quot;avatar-text avatar-sm&quot;&gt;SK&lt;/div&gt;
+&lt;div class=&quot;avatar-text avatar-xs&quot;&gt;SK&lt;/div&gt;
+</code>
+</pre>
+
+           <footer>
+            <a class="prev" href="../alert/alert.html"> Alert </a>
+            <a class="next" href="../badge/badge.html"> Badge </a>
+          </footer>
+</div>
+</main>
+<script src="../../../prism/prism.js"></script>
+  </body>
+  
+</html>
+
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <title>Krozaro</title>
+    <meta charset="UTF-8" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -23,4 +143,4 @@
       </div>
     </div>
   </body>
-</html>
+</html> -->
