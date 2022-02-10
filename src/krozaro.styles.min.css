@@ -34,16 +34,17 @@
   --color-warning: #ffd137;
 
   --black: #1d1d21;
-  --gray-1: #f3f3f3;
+  --color-bg: #f3f3f3;
   --gray-text: #445b78;
-  --light-gray-text: #7a7a7a;;
-
+  --light-gray-text: #7a7a7a;
   --white: white;
   --btn-active: #64aef8;
   --btn-disabled: #71a0cf;
 
 
   --color-primary: #1e90ff;
+
+ --shadow-md: 0 5px 10px rgba(0, 0, 0, 0.35);
 
 
   /* spacing */
@@ -164,5 +165,5 @@ p.xl{
   border-radius: 50%;
 }
 .icon-bar > i:hover {
-  background-color: var(--gray-1);
+  background-color: var(--color-bg);
 }

@@ -54,88 +54,37 @@
     </nav>
     <div class="doc-content">
         <section class="component">
-            <h1>Theme</h1>
-          <p class="md"> The Krozaro library is built to be a blank slate that can be easily customized to fit a brand. We have incorporated some default styles as CSS variables.
-            These variables can be easily customized to modify the look and feel of your application.
+            <h1>Alert</h1>
+          <p class="md"> An alert displays a short, important message in a way that attracts the user's attention without interrupting the user's task.
           </p>  
           </section>
-
-          <section class="component">
-            <h2>Default Color Theme</h2>
             <section class="demo">
-              <div class="color-block" style="background-color: var(--color-primary);">
-             Primary Color
-              </div>
-              <div class="color-block" style="background-color: var(--gray-text);">
-                Gray Text
-                 </div>
-                 <div class="color-block" style="background-color: var(--gray-1);color:var(--gray-text);">
-                  Gray-1 (backgrounds)
-                   </div>
-                   <div class="color-block" style="background-color: var(--color-success);">
-                    Success
-                     </div>
-                     <div class="color-block" style="background-color: var(--color-error);">
-                      Error
-                       </div>
-                       <div class="color-block" style="background-color: var(--color-warning); color:var(--gray-text);">
-                        Warning
-                         </div>
+            <div class="flex-col">
+            <div class="alert alert-success"> <span>This is a success alert</span> <span class="alert-close"> x </span></div>
+            <div class="alert alert-error"><span>This is an error alert</span> <span class="alert-close"> x </span></div>
+              <div class="alert alert-warning"><span>This is a warning alert</span> <span class="alert-close"> x </span></div>
+              <div class="alert alert-info"><span>This is an info alert</span> <span class="alert-close"> x </span></div>
+            </div>
             </section>
-          </section>
+
+
+              <pre>
+              <code class="language-html">
+&lt;div class=&quot;alert alert-success&quot;&gt; &lt;span&gt;This is a success alert&lt;/span&gt; &lt;span class=&quot;alert-close&quot;&gt; x &lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;alert alert-error&quot;&gt;&lt;span&gt;This is an error alert&lt;/span&gt; &lt;span class=&quot;alert-close&quot;&gt; x &lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;alert alert-warning&quot;&gt;&lt;span&gt;This is a warning alert&lt;/span&gt; &lt;span class=&quot;alert-close&quot;&gt; x &lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;alert alert-info&quot;&gt;&lt;span&gt;This is an info alert&lt;/span&gt; &lt;span class=&quot;alert-close&quot;&gt; x &lt;/span&gt;&lt;/div&gt;
+                
+              </code>
+            </pre>
 
            <footer>
             <a class="prev" href="../../../theme.html"> Theme </a>
-            <a class="next" href="../alert/alert.html"> UI Components </a>
+            <a class="next" href="../avatar/avatar.html"> Avatar </a>
           </footer>
 </div>
 </main>
-<script src="./prism/prism.js"></script>
+<script src="../../../prism/prism.js"></script>
   </body>
   
 </html>
-<!-- <!DOCTYPE html>
-<html>
-  <head>
-    <title>Krozaro</title>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="../../krozaro.styles.min.css" />
-  </head>
-
-  <body>
-    <p>
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-      Lorem Ipsum has been the industry's standard dummy text ever since the
-      1500s, when an unknown printer took a galley of type and scrambled it to
-      make a type specimen book. It has survived not only five centuries, but
-      also the leap into electronic typesetting, remaining essentially
-      unchanged. It was popularised in the 1960s with the release of Letraset
-      sheets containing Lorem Ipsum passages, and more recently with desktop
-      publishing software like Aldus PageMaker including versions of Lorem
-      Ipsum. Why do we use it? It is a long established fact that a reader will
-      be distracted by the readable content of a page when looking at its
-      layout. The point of using Lorem Ipsum is that it has a more-or-less
-      normal distribution of letters, as opposed to using 'Content here, content
-      here', making it look like readable English. Many desktop publishing
-      packages and web page editors now use Lorem Ipsum as their default model
-      text, and a search for 'lorem ipsum' will uncover many web sites still in
-      their infancy. Various versions have evolved over the years, sometimes by
-      accident, sometimes on purpose (injected humour and the like). Where does
-      it come from? Contrary to popular belief, Lorem Ipsum is not simply random
-      text. It has roots in a piece of classical Latin literature from 45 BC,
-      making it over 2000 years old. Richard McClintock, a Latin professor at
-      Hampden-Sydney College in Virginia, looked up one of the more obscure
-      Latin words, consectetur, from a Lorem Ipsum passage, and going through
-      the cites of the word in classical literature, discovered the undoubtable
-      source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus
-      Bonorum et Malorum" (The Extremes of Good and Evil) by Cice
-    </p>
-    <div class="container alert">
-      <div class="container-title">Hello Bro!</div>
-      <div class="container-content">You have exhausted all limits!</div>
-      <div class="container-footer">
-        <button class="btn btn-full-width">Ok</button>
-      </div>
-    </div>
-  </body>
-</html> -->
