@@ -74,6 +74,4 @@ background-color: var(--color-success);
 .btn-disabled:hover{
   box-shadow: none;
 }
-  button>i{
-margin-right: 50px;
-  }
+
