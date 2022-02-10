@@ -1,10 +1,9 @@
 .btn {
-    display: inline-flex;
     position: relative;
-    white-space: nowrap;
+    /* white-space: nowrap; */
     text-decoration: none;
     line-height: 1;
-  
+    font-family: var(--font-secondary);
     padding: var(--space-sm);
     border-radius: 5px;
     border: 0;
@@ -15,6 +14,10 @@
     cursor: pointer;
     transition: 0.2s;
   }
+  .btn-icon{
+    display: inline-flex;
+
+  }
   .btn > .icon {
     color: inherit;
     flex-shrink: 0;
@@ -23,6 +26,7 @@
   }
   .btn:hover {
     background-color: var(--btn-active);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.35);
   }
   .link-btn:hover {
     text-decoration: underline;
@@ -43,4 +47,8 @@
     position: fixed;
     bottom: 0;
     right: var(--space-sm);
+  }
+
+  .btn-disabled{
+    background-color: var(--button-disabled);
   }
