@@ -80,7 +80,7 @@ a > .btn{
     
 }
 .sidebar-container{
-    overflow-x: scroll;
+    overflow-y: auto;
     display: flex;
     flex-direction: column;
    
@@ -89,17 +89,17 @@ a > .btn{
     border-right: 1px solid var(--gray-1);
     padding: var(--space-md);    
 }
-.sidebar>li{
+.sidebar>a>li{
     color: var(--gray-text);
     list-style: none;
     border-radius: var(--radius-sm);
     padding: var(--space-sm);
 }
-.sidebar>li:hover{
+.sidebar>a>li:hover{
     color: var(--color-primary);
     cursor: pointer;
 }
-.sidebar>.active{
+.sidebar>a>.active{
     color: var(--color-primary);
     background-color: #f0f6ff;
     cursor: pointer;
@@ -107,7 +107,7 @@ a > .btn{
 }
 .doc-main{
 /* display: grid; */
-overflow-x: scroll;
+overflow-y: auto;
 border-left: 1px solid var(--gray-1);
 }
 .doc-content{
@@ -132,6 +132,8 @@ padding-left: 10vw;
 li.list-head{
     color: var(--black);
     font-weight: 700;
+    list-style: none;
+    padding: var(--space-sm);
 }
 li.list-head:hover{
     color: var(--black);
@@ -187,4 +189,10 @@ footer{
     padding: var(--space-md);
     text-align:center;
     background-color: var(--gray-1);
+}
+.color-block{
+    width: 100%;
+    padding: var(--space-sm);
+    border: 1px solid var(--black);
+    color: var(--white);
 }
