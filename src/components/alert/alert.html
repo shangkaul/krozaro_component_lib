@@ -7,12 +7,6 @@
     <link rel="stylesheet" href="../../../styles.css" />
     <link href="../../../prism/prism.css" rel="stylesheet" />
     <link rel="icon" href="../../img/favicon.ico" type="image/icon">
-    <script>
-      const showAlert = () => document.getElementById("alert-container").style.display="unset";
-
-      const closeAlert = () => document.getElementById("alert-container").style.display = "none";
-
-    </script>
   </head>
 
   <body class="menuGrid">
@@ -61,41 +55,29 @@
     <div class="doc-content">
         <section class="component">
             <h1>Alert</h1>
-          <p class="md"> An alert is a dialog that presents users with information, alert messages. 
-            An alert appears on top of the web app's content and must be manually dismissed before user can resume
-            interacting with the app.
+          <p class="md"> An alert displays a short, important message in a way that attracts the user's attention without interrupting the user's task.
           </p>  
           </section>
-<h2>Demo</h2>
             <section class="demo">
-              <button id="call-alert" class="btn" onclick="showAlert()">Show Alert</button>
-          </section>
-          <div class="container alert" id="alert-container">
-            <div class="container-title">Alert Heading!</div>
-            <div class="container-content">Alert text description.</div>
-            <div class="container-footer">
-              <button class="btn btn-full-width" onclick="closeAlert()">Dismiss</button>
-            </div></div>
+            <div class="flex-col">
+            <div class="alert alert-success"> <span>This is a success alert</span> <span class="alert-close"> x </span></div>
+            <div class="alert alert-error"><span>This is an error alert</span> <span class="alert-close"> x </span></div>
+              <div class="alert alert-warning"><span>This is a warning alert</span> <span class="alert-close"> x </span></div>
+              <div class="alert alert-info"><span>This is an info alert</span> <span class="alert-close"> x </span></div>
+            </div>
+            </section>
 
-           <h2>HTML</h2>
-            <pre>
+
+              <pre>
               <code class="language-html">
-&lt;div class=&quot;container alert&quot; id=&quot;alert-container&quot;&gt;
-&lt;div class=&quot;container-title&quot;&gt;Alert Heading!&lt;/div&gt;
-&lt;div class=&quot;container-content&quot;&gt;Alert text description.&lt;/div&gt;
-&lt;div class=&quot;container-footer&quot;&gt;
-&lt;button class=&quot;btn btn-full-width&quot; onclick=&quot;closeAlert()&quot;&gt;Dismiss&lt;/button&gt;
-&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;alert alert-success&quot;&gt; &lt;span&gt;This is a success alert&lt;/span&gt; &lt;span class=&quot;alert-close&quot;&gt; x &lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;alert alert-error&quot;&gt;&lt;span&gt;This is an error alert&lt;/span&gt; &lt;span class=&quot;alert-close&quot;&gt; x &lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;alert alert-warning&quot;&gt;&lt;span&gt;This is a warning alert&lt;/span&gt; &lt;span class=&quot;alert-close&quot;&gt; x &lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;alert alert-info&quot;&gt;&lt;span&gt;This is an info alert&lt;/span&gt; &lt;span class=&quot;alert-close&quot;&gt; x &lt;/span&gt;&lt;/div&gt;
+                
               </code>
             </pre>
-<h2>JS</h2>
-<pre>
-  <code class="language-js">
-const showAlert = () => document.getElementById("alert-container").style.display="unset";
-const closeAlert = () => document.getElementById("alert-container").style.display = "none";
 
-  </code>
-</pre>
            <footer>
             <a class="prev" href="../../../theme.html"> Theme </a>
             <a class="next" href="../avatar/avatar.html"> Avatar </a>

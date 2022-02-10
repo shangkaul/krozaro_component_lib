@@ -44,6 +44,8 @@
 
   --color-primary: #1e90ff;
 
+ --shadow-md: 0 5px 10px rgba(0, 0, 0, 0.35);
+
 
   /* spacing */
   --space-unit: 1em;

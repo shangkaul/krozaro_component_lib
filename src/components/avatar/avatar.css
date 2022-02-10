@@ -1,12 +1,47 @@
-.avatar {
-    position: relative;
-    width: 6rem;
-    height: 6rem;
-    padding: 0;
-  }
   
+  .avatar{
+    position: relative;
+  padding: 0;
+}
   .avatar > img {
     aspect-ratio: 1;
-    border-radius: 50%;
+    border-radius: var(--radius-full);
     padding: 0;
+  }
+  .avatar-text{
+    position: relative;
+    font-family: var(--font-secondary);
+  padding: 0;
+  border-radius: var(--radius-full);
+  background-color: var(--gray-text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+}
+  .avatar-xl{
+    width: 6rem;
+    height: 6rem;
+    font-size: 3rem;
+  }
+  .avatar-lg{
+    width: 5rem;
+    height: 5rem;
+    font-size: 2.5rem;
+  }
+  .avatar-md{
+    width: 4rem;
+    height: 4rem;
+    font-size: 2rem;
+  }
+  .avatar-sm{
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.5rem;
+  }
+  .avatar-xs{
+    width: 2rem;
+    height: 2rem;
+    font-size: 1rem;
+
   }
