@@ -181,7 +181,6 @@ footer{
 
 .component{
     margin-bottom: var(--space-md);
-    position: relative;
 }
 .demo{
     margin-bottom: var(--space-md);
@@ -189,6 +188,7 @@ footer{
     padding: var(--space-md);
     text-align:center;
     background-color: var(--color-bg);
+
 }
 .color-block{
     width: 100%;
@@ -222,6 +222,7 @@ footer{
      flex-direction: row;
      justify-content: space-evenly;
      align-items: center;
+     
   }
 
   .flex-col{

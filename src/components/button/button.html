@@ -3,6 +3,152 @@
   <head>
     <title>Krozaro</title>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../../krozaro.styles.min.css" />
+    <link rel="stylesheet" href="../../../styles.css" />
+    <link href="../../../prism/prism.css" rel="stylesheet" />
+    <link rel="icon" href="../../img/favicon.ico" type="image/icon">
+  </head>
+
+  <body class="menuGrid">
+<aside class="sidebar-container">
+    
+    <a href="../../../index.html" class="docs-logo">
+        <img src="../../img/docs-logo.png"/>
+    </a>
+
+    <div class="sidebar">
+<li class="list-head">Getting Started</li> 
+<a href="../../../docs.html"><li>Introduction</li></a>
+<a href="../../../installation.html"> <li>Installation</li></a>
+ <a href="../../../typo.html"> <li>Typography</li></a>
+ <a href="../../../theme.html"> <li>Theme</li></a>
+
+<li class="list-head">UI Components</li>      
+ <a href="../alert/alert.html"> <li>Alert</li></a>
+
+<a href="../avatar/avatar.html"><li> Avatar</li></a>
+ <a href="../badge/badge.html"> <li>Badge</li></a>
+ <a href="../button/button.html"> <li class="active">Button</li></a>
+ <a href="../card/card.html"> <li>Card</li></a>
+ <a href="../grid/grid.html"> <li>Grid</li></a>
+ <a href="../image/image.html"> <li>Image</li></a>
+ <a href="../input/input.html"> <li>Input</li></a>
+ <a href="../lists/lists.html"> <li>Lists</li></a>
+ <a href="../modal/modal.html"> <li>Modal</li></a>
+ <a href="../navigation/navigation.html"><li>Navigation</li></a>
+ <a href="../rating/rating.html"> <li>Rating</li></a>
+ <a href="../toast/toast.html"> <li>Toast</li></a>
+</div>
+</aside>
+<main class="doc-main"> 
+    <nav>
+        <ul class="nav-group start">
+          <li> <a href="../../../docs.html">Getting Started</a></li>
+            <li class="nav-active"><a href="../avatar/avatar.html">UI Components</a></li>
+        </ul>
+        <ul class="nav-group end">
+        <li><a href="https://github.com/shangkaul/krozaro_component_lib"><i class="icon icon-md fa fa-github"></i></a></li>
+        <li></li>
+    </ul>
+    
+    </nav>
+    <div class="doc-content">
+        <section class="component">
+            <h1>Button</h1>
+          <p class="md"> Buttons provide a clickable element in your UI. Buttons can be used in forms or anywhere 
+            that needs a simple click to function feature. They may display text, icons or both.
+          </p>  
+          </section>
+
+          <section class="component col">
+            <h2>Properties</h2>
+            <p class="md">
+              Buttons can be accompanied with various properties to change their appearance like - 
+              <br/>
+              - <span class="highlight"> Primary</span>: Simple primary theme colored button.<br/>
+              - <span class="highlight"> Success</span>: Success (green) themed button.<br/>
+              - <span class="highlight"> Error</span>: Error (red) themed button.<br/>
+              - <span class="highlight"> Full width</span>: Button which takes up full width of parent element.<br/>
+              - <span class="highlight"> Link</span>: Link like button.<br/>
+              - <span class="highlight"> Disabled</span>: Disabled, non-clickable button.<br/>
+              - <span class="highlight"> Floating</span>: Floating action button.<br/>
+            </p>
+            <section class="demo">
+              <div class="flex-row">
+                <button class="btn">Primary</button>
+                <button class="btn btn-link">Link</button>
+                <button class="btn icon-btn">
+                  <i class="fa fa-camera icon"></i> Icon Button
+                </button></div>
+                <div class="flex-row">
+                  <button class="btn btn-disabled">Disabled</button>
+                  <button class="btn btn-success">Button Success</button>
+                  <button class="btn btn-error">Button Error</button>
+                  </div>
+              <div class="flex-row">
+
+                <button class="btn btn-float btn-round">
+                  <i class="fa fa-plus icon"></i>
+                </button>
+                <button class="btn btn-full-width">Full width</button>  
+              </div>
+            </section>
+          </section>
+<pre>
+  <code class="language-html">
+          
+&lt;!-- Primary Button --&gt;
+&lt;button class=&quot;btn&quot;&gt;Primary&lt;/button&gt;
+    
+&lt;!-- Button Link --&gt;
+&lt;button class=&quot;btn btn-link&quot;&gt;Link&lt;/button&gt;
+    
+&lt;!-- Button with Icon --&gt;
+&lt;button class=&quot;btn icon-btn&quot;&gt;
+&lt;i class=&quot;fa fa-camera icon&quot;&gt;&lt;/i&gt; Icon Button&lt;/button&gt;
+    
+&lt;!-- Disabled Button --&gt;
+&lt;button class=&quot;btn btn-disabled&quot;&gt;Disabled&lt;/button&gt;
+
+&lt;!-- Success Button --&gt;
+&lt;button class=&quot;btn btn-success&quot;&gt;Button Success&lt;/button&gt;
+
+&lt;!-- Error Button --&gt;
+&lt;button class=&quot;btn btn-error&quot;&gt;Button Error&lt;/button&gt;
+      
+&lt;!-- The FAB - Floating Action Button --&gt;
+&lt;button class=&quot;btn btn-float btn-round&quot;&gt;
+&lt;i class=&quot;fa fa-plus icon&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+
+&lt;!-- Full Width Button --&gt;
+&lt;button class=&quot;btn btn-full-width&quot;&gt;Full width&lt;/button&gt;  
+  
+  </code>
+</pre>
+
+<p class="md">
+  <span class="highlight">Pssshhhh...</span> still looking for the Floating action button?<br/>
+  Find the + to your bottom right, the FAB moves with the viewport as you sroll your screen!
+</p>
+
+           <footer>
+            <a class="prev" href="../badge/badge.html"> Badge </a>
+            <a class="next" href="../card/card.html"> Card </a>
+          </footer>
+</div>
+</main>
+<script src="../../../prism/prism.js"></script>
+  </body>
+  
+</html>
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <title>Krozaro</title>
+    <meta charset="UTF-8" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -13,15 +159,7 @@
 
   <body>
     <div class="container">
-      <button class="btn">Primary</button>
-      <button class="btn btn-link">Link</button>
-      <button class="btn icon-btn">
-        <i class="fa fa-camera icon"></i>
-      </button>
-      <button class="btn btn-float">
-        <i class="fa fa-camera icon"></i>
-      </button>
-      <button class="btn btn-full-width">Full width</button>
+      
     </div>
   </body>
-</html>
+</html> -->
