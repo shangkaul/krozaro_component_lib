@@ -42,13 +42,36 @@
   }
   .btn-link:hover {
     background-color: transparent;
+    box-shadow: none;
   }
   .btn-float {
     position: fixed;
-    bottom: 0;
+    bottom: var(--space-sm);
     right: var(--space-sm);
+    
   }
-
+  .btn-success{
+    background-color: var(--color-success);
+  }
+  .btn-error{
+    background-color: var(--color-error);
+  }
+  .btn-success:hover{
+background-color: var(--color-success);    
+  }
+  .btn-error:hover{
+    background-color: var(--color-error);
+  }
+  .btn-round{
+    border-radius: var(--radius-full);
+    height: var(--space-xxl);
+    width: var(--space-xxl);
+  }
   .btn-disabled{
-    background-color: var(--button-disabled);
+    background-color: var(--btn-disabled);
+    pointer-events: none;
   }
+.btn-disabled:hover{
+  box-shadow: none;
+}
+
