@@ -151,7 +151,7 @@ p.xl{
   color:var(--color-primary);
 }
 .icon-bar {
-  color: var(--gray-6);
+  color: var(--light-gray-text);
   font-weight: 400;
   display: flex;
   align-items: center;

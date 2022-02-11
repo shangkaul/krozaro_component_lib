@@ -3,71 +3,444 @@
   <head>
     <title>Krozaro</title>
     <meta charset="UTF-8" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
     <link rel="stylesheet" href="../../krozaro.styles.min.css" />
-
+    <link rel="stylesheet" href="../../../styles.css" />
+    <link href="../../../prism/prism.css" rel="stylesheet" />
+    <link rel="icon" href="../../img/favicon.ico" type="image/icon">
   </head>
 
-  <body>
-    <!-- card with badge -->
-    <div class="card card-badge">
-      <span class="badge">X</span>
-      <div class="card-title">Hello world</div>
-      <div class="card-img">
-        <img src="https://picsum.photos/640/400" />
-      </div>
-      <div class="card-content">
-        lorem ipsum dolor set imaat. lorem ipsum dolor set imaat. lorem ipsum
-        dolor set imaat
-      </div>
-      <div class="card-footer">
-        <span>like</span><span>comment</span>
-        <div class="icon-bar">
-          <i class="fa fa-heart"></i><i class="fa fa-share-alt"></i
-          ><i class="fa fa-ellipsis-v"></i>
+  <body class="menuGrid">
+<aside class="sidebar-container">
+    
+    <a href="../../../index.html" class="docs-logo">
+        <img src="../../img/docs-logo.png"/>
+    </a>
+
+    <div class="sidebar">
+<li class="list-head">Getting Started</li> 
+<a href="../../../docs.html"><li>Introduction</li></a>
+<a href="../../../installation.html"> <li>Installation</li></a>
+ <a href="../../../typo.html"> <li>Typography</li></a>
+ <a href="../../../theme.html"> <li>Theme</li></a>
+
+<li class="list-head">UI Components</li>      
+ <a href="../alert/alert.html"> <li>Alert</li></a>
+
+<a href="../avatar/avatar.html"><li> Avatar</li></a>
+ <a href="../badge/badge.html"> <li>Badge</li></a>
+ <a href="../button/button.html"> <li>Button</li></a>
+ <a href="../card/card.html"> <li class="active">Card</li></a>
+ <a href="../grid/grid.html"> <li>Grid</li></a>
+ <a href="../image/image.html"> <li>Image</li></a>
+ <a href="../input/input.html"> <li>Input</li></a>
+ <a href="../lists/lists.html"> <li>Lists</li></a>
+ <a href="../modal/modal.html"> <li>Modal</li></a>
+ <a href="../navigation/navigation.html"><li>Navigation</li></a>
+ <a href="../rating/rating.html"> <li>Rating</li></a>
+ <a href="../toast/toast.html"> <li>Toast</li></a>
+</div>
+</aside>
+<main class="doc-main"> 
+    <nav>
+        <ul class="nav-group start">
+          <li> <a href="../../../docs.html">Getting Started</a></li>
+            <li class="nav-active"><a href="../avatar/avatar.html">UI Components</a></li>
+        </ul>
+        <ul class="nav-group end">
+        <li><a href="https://github.com/shangkaul/krozaro_component_lib"><i class="icon icon-md fa fa-github"></i></a></li>
+        <li></li>
+    </ul>
+    
+    </nav>
+    <div class="doc-content">
+        <section class="component">
+            <h1>Card</h1>
+          <p class="md"> Cards are a standard piece of UI that serves as an entry point to more detailed information. A card can be a single
+            component but is often made up of card-header, card-content,card-title sub components.
+          </p>  
+          </section>
+
+          <section class="component">
+            <h2>Text only Card</h2>
+            <section class="demo">
+              <div class="flex-row">
+                <div class="card">
+      <div class="text-overlay"><span class="overlay-content">Loading ...</span></div>
+
+                  <span class="badge btn-round-md">X</span>
+                  <div class="card-title">Hello world</div>
+                  <div class="card-img">
+                    <img src="https://picsum.photos/640/400" />
+                  </div>
+                  <div class="card-content">
+                    lorem ipsum dolor set imaat. lorem ipsum dolor set imaat. lorem ipsum
+                    dolor set imaat
+                  </div>
+                  <div class="card-footer">
+                    <span>like</span><span>comment</span>
+                    <div class="icon-bar">
+                      <i class="fa fa-heart"></i><i class="fa fa-share-alt"></i
+                      ><i class="fa fa-ellipsis-v"></i>
+                    </div>
+                  </div>
+                </div>
+                </div>
+                          </section>
+          </section>
+<pre>
+  <code class="language-html">
+&lt;div class=&quot;card&quot;&gt;
+  &lt;span class=&quot;badge btn-round-md&quot;&gt;X&lt;/span&gt;
+  &lt;div class=&quot;text-overlay&quot;&gt;&lt;span class=&quot;overlay-content&quot;&gt;Loading ...&lt;/span&gt;&lt;/div&gt;
+  &lt;div class=&quot;card-title&quot;&gt;Hello world&lt;/div&gt;
+  &lt;div class=&quot;card-img&quot;&gt;
+    &lt;img src=&quot;https://picsum.photos/640/400&quot; /&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;card-content&quot;&gt;
+    lorem ipsum dolor set imaat. lorem ipsum dolor set imaat. lorem ipsum
+    dolor set imaat
+  &lt;/div&gt;
+  &lt;div class=&quot;card-footer&quot;&gt;
+    &lt;span&gt;like&lt;/span&gt;&lt;span&gt;comment&lt;/span&gt;
+    &lt;div class=&quot;icon-bar&quot;&gt;
+      &lt;i class=&quot;fa fa-heart&quot;&gt;&lt;/i&gt;
+      &lt;i class=&quot;fa fa-share-alt&quot;&gt;&lt;/i&gt;
+      &lt;i class=&quot;fa fa-ellipsis-v&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+  </code>
+</pre>
+
+<section class="component">
+  <h2>Card With Dismiss</h2>
+  <section class="demo">
+    <div class="flex-row">
+      <div class="card card-dismiss">
+      <div class="text-overlay"><span class="overlay-content">Loading ...</span></div>
+
+        <span class="badge btn-round-md">X</span>
+        <div class="card-title">Hello world</div>
+        <div class="card-img">
+          <img src="https://picsum.photos/640/400" />
+        </div>
+        <div class="card-content">
+          lorem ipsum dolor set imaat. lorem ipsum dolor set imaat. lorem ipsum
+          dolor set imaat
+        </div>
+        <div class="card-footer">
+          <span>like</span><span>comment</span>
+          <div class="icon-bar">
+            <i class="fa fa-heart"></i><i class="fa fa-share-alt"></i
+            ><i class="fa fa-ellipsis-v"></i>
+          </div>
         </div>
       </div>
-    </div>
-    <!-- only text card -->
-    <div class="card">
-      <span class="badge">X</span>
-      <div class="card-title">Hello world</div>
-      <div class="card-img">
-        <img src="https://picsum.photos/640/400" />
       </div>
-      <div class="card-content">
-        lorem ipsum dolor set imaat. lorem ipsum dolor set imaat. lorem ipsum
-        dolor set imaat
-      </div>
-      <div class="card-footer">
-        <span>like</span><span>comment</span>
-        <div class="icon-bar">
-          <i class="fa fa-heart"></i><i class="fa fa-share-alt"></i
-          ><i class="fa fa-ellipsis-v"></i>
+                </section>
+</section>
+<pre>
+<code class="language-html">
+&lt;div class=&quot;card card-dismiss&quot;&gt;
+&lt;span class=&quot;badge btn-round-md&quot;&gt;X&lt;/span&gt;
+&lt;div class=&quot;text-overlay&quot;&gt;&lt;span class=&quot;overlay-content&quot;&gt;Loading ...&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;card-title&quot;&gt;Hello world&lt;/div&gt;
+&lt;div class=&quot;card-img&quot;&gt;
+&lt;img src=&quot;https://picsum.photos/640/400&quot; /&gt;
+&lt;/div&gt;
+&lt;div class=&quot;card-content&quot;&gt;
+lorem ipsum dolor set imaat. lorem ipsum dolor set imaat. lorem ipsum
+dolor set imaat
+&lt;/div&gt;
+&lt;div class=&quot;card-footer&quot;&gt;
+&lt;span&gt;like&lt;/span&gt;&lt;span&gt;comment&lt;/span&gt;
+&lt;div class=&quot;icon-bar&quot;&gt;
+&lt;i class=&quot;fa fa-heart&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;fa fa-share-alt&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;fa fa-ellipsis-v&quot;&gt;&lt;/i&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+
+<section class="component">
+  <h2>Card without Action Buttons</h2>
+  <section class="demo">
+    <div class="flex-row">
+      <div class="card card-no-footer">
+      <div class="text-overlay"><span class="overlay-content">Loading ...</span></div>
+
+        <span class="badge btn-round-md">X</span>
+        <div class="card-title">Hello world</div>
+        <div class="card-img">
+          <img src="https://picsum.photos/640/400" />
+        </div>
+        <div class="card-content">
+          lorem ipsum dolor set imaat. lorem ipsum dolor set imaat. lorem ipsum
+          dolor set imaat
+        </div>
+        <div class="card-footer">
+          <span>like</span><span>comment</span>
+          <div class="icon-bar">
+            <i class="fa fa-heart"></i><i class="fa fa-share-alt"></i
+            ><i class="fa fa-ellipsis-v"></i>
+          </div>
         </div>
       </div>
-    </div>
-    <!-- img card -->
-    <div class="card img-card">
-      <span class="badge">X</span>
-      <div class="card-title">Hello world</div>
-      <div class="card-img">
-        <img src="https://picsum.photos/640/400" />
       </div>
-      <div class="card-content">
-        lorem ipsum dolor set imaat. lorem ipsum dolor set imaat. lorem ipsum
-        dolor set imaat
-      </div>
-      <div class="card-footer">
-        <span>like</span><span>comment</span>
-        <div class="icon-bar">
-          <i class="fa fa-heart"></i><i class="fa fa-share-alt"></i
-          ><i class="fa fa-ellipsis-v"></i>
+                </section>
+</section>
+<pre>
+<code class="language-html">
+&lt;div class=&quot;card card-no-footer&quot;&gt;
+&lt;span class=&quot;badge btn-round-md&quot;&gt;X&lt;/span&gt;
+&lt;div class=&quot;text-overlay&quot;&gt;&lt;span class=&quot;overlay-content&quot;&gt;Loading ...&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;card-title&quot;&gt;Hello world&lt;/div&gt;
+&lt;div class=&quot;card-img&quot;&gt;
+&lt;img src=&quot;https://picsum.photos/640/400&quot; /&gt;
+&lt;/div&gt;
+&lt;div class=&quot;card-content&quot;&gt;
+lorem ipsum dolor set imaat. lorem ipsum dolor set imaat. lorem ipsum
+dolor set imaat
+&lt;/div&gt;
+&lt;div class=&quot;card-footer&quot;&gt;
+&lt;span&gt;like&lt;/span&gt;&lt;span&gt;comment&lt;/span&gt;
+&lt;div class=&quot;icon-bar&quot;&gt;
+&lt;i class=&quot;fa fa-heart&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;fa fa-share-alt&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;fa fa-ellipsis-v&quot;&gt;&lt;/i&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+
+<section class="component">
+  <h2>Image Card</h2>
+  <section class="demo">
+    <div class="flex-row">
+      <div class="card img-card">
+      <div class="text-overlay"><span class="overlay-content">Loading ...</span></div>
+
+        <span class="badge btn-round-md">X</span>
+        <div class="card-title">Hello world</div>
+        <div class="card-img">
+          <img src="https://picsum.photos/640/400" />
+        </div>
+        <div class="card-content">
+          lorem ipsum dolor set imaat. lorem ipsum dolor set imaat. lorem ipsum
+          dolor set imaat
+        </div>
+        <div class="card-footer">
+          <span>like</span><span>comment</span>
+          <div class="icon-bar">
+            <i class="fa fa-heart"></i><i class="fa fa-share-alt"></i
+            ><i class="fa fa-ellipsis-v"></i>
+          </div>
         </div>
       </div>
-    </div>
+      </div>
+                </section>
+</section>
+<pre>
+<code class="language-html">
+&lt;div class=&quot;card img-card&quot;&gt;
+&lt;span class=&quot;badge btn-round-md&quot;&gt;X&lt;/span&gt;
+&lt;div class=&quot;text-overlay&quot;&gt;&lt;span class=&quot;overlay-content&quot;&gt;Loading ...&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;card-title&quot;&gt;Hello world&lt;/div&gt;
+&lt;div class=&quot;card-img&quot;&gt;
+&lt;img src=&quot;https://picsum.photos/640/400&quot; /&gt;
+&lt;/div&gt;
+&lt;div class=&quot;card-content&quot;&gt;
+lorem ipsum dolor set imaat. lorem ipsum dolor set imaat. lorem ipsum
+dolor set imaat
+&lt;/div&gt;
+&lt;div class=&quot;card-footer&quot;&gt;
+&lt;span&gt;like&lt;/span&gt;&lt;span&gt;comment&lt;/span&gt;
+&lt;div class=&quot;icon-bar&quot;&gt;
+&lt;i class=&quot;fa fa-heart&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;fa fa-share-alt&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;fa fa-ellipsis-v&quot;&gt;&lt;/i&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+
+<section class="component">
+  <h2>Card With Badge</h2>
+  <section class="demo">
+    <div class="flex-row">
+      <div class="card img-card">
+      <div class="text-overlay"><span class="overlay-content">Loading ...</span></div>
+
+        <span class="badge btn-round-md">X</span>
+        <h3 class="card-badge "><span class="badge-text"> New</span></h3>
+
+        <div class="card-title">Hello world
+        </div>
+        <div class="card-img">
+          <img src="https://picsum.photos/640/400" />
+        </div>
+        <div class="card-content">
+          lorem ipsum dolor set imaat. lorem ipsum dolor set imaat. lorem ipsum
+          dolor set imaat
+        </div>
+        <div class="card-footer">
+          <span>like</span><span>comment</span>
+          <div class="icon-bar">
+            <i class="fa fa-heart"></i><i class="fa fa-share-alt"></i
+            ><i class="fa fa-ellipsis-v"></i>
+          </div>
+        </div>
+      </div>
+      </div>
+                </section>
+</section>
+<pre>
+<code class="language-html">
+&lt;div class=&quot;card&quot;&gt;
+&lt;span class=&quot;badge btn-round-md&quot;&gt;X&lt;/span&gt;
+&lt;div class=&quot;text-overlay&quot;&gt;&lt;span class=&quot;overlay-content&quot;&gt;Loading ...&lt;/span&gt;&lt;/div&gt;
+&lt;h3 class=&quot;card-badge &quot;&gt;&lt;span class=&quot;badge-text&quot;&gt; New&lt;/span&gt;&lt;/h3&gt;
+&lt;div class=&quot;card-title&quot;&gt;Hello world&lt;/div&gt;
+&lt;div class=&quot;card-img&quot;&gt;
+&lt;img src=&quot;https://picsum.photos/640/400&quot; /&gt;
+&lt;/div&gt;
+&lt;div class=&quot;card-content&quot;&gt;
+lorem ipsum dolor set imaat. lorem ipsum dolor set imaat. lorem ipsum
+dolor set imaat
+&lt;/div&gt;
+&lt;div class=&quot;card-footer&quot;&gt;
+&lt;span&gt;like&lt;/span&gt;&lt;span&gt;comment&lt;/span&gt;
+&lt;div class=&quot;icon-bar&quot;&gt;
+&lt;i class=&quot;fa fa-heart&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;fa fa-share-alt&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;fa fa-ellipsis-v&quot;&gt;&lt;/i&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+
+<section class="component">
+  <h2>Card With Text Overlay</h2>
+  <section class="demo">
+    <div class="flex-row">
+      <div class="card img-card card-overlay">
+      <div class="text-overlay"><span class="overlay-content">Loading ...</span></div>
+
+        <span class="badge btn-round-md">X</span>
+
+        <div class="card-title">Hello world
+        </div>
+        <div class="card-img">
+          <img src="https://picsum.photos/640/400" />
+        </div>
+        <div class="card-content">
+          lorem ipsum dolor set imaat. lorem ipsum dolor set imaat. lorem ipsum
+          dolor set imaat
+        </div>
+        <div class="card-footer">
+          <span>like</span><span>comment</span>
+          <div class="icon-bar">
+            <i class="fa fa-heart"></i><i class="fa fa-share-alt"></i
+            ><i class="fa fa-ellipsis-v"></i>
+          </div>
+        </div>
+      </div>
+      </div>
+                </section>
+</section>
+<pre>
+<code class="language-html">
+&lt;div class=&quot;card card-overlay&quot;&gt;
+&lt;span class=&quot;badge btn-round-md&quot;&gt;X&lt;/span&gt;
+&lt;div class=&quot;text-overlay&quot;&gt;&lt;span class=&quot;overlay-content&quot;&gt;Loading ...&lt;/span&gt;&lt;/div&gt;
+&lt;h3 class=&quot;card-badge &quot;&gt;&lt;span class=&quot;badge-text&quot;&gt; New&lt;/span&gt;&lt;/h3&gt;
+&lt;div class=&quot;card-title&quot;&gt;Hello world&lt;/div&gt;
+&lt;div class=&quot;card-img&quot;&gt;
+&lt;img src=&quot;https://picsum.photos/640/400&quot; /&gt;
+&lt;/div&gt;
+&lt;div class=&quot;card-content&quot;&gt;
+lorem ipsum dolor set imaat. lorem ipsum dolor set imaat. lorem ipsum
+dolor set imaat
+&lt;/div&gt;
+&lt;div class=&quot;card-footer&quot;&gt;
+&lt;span&gt;like&lt;/span&gt;&lt;span&gt;comment&lt;/span&gt;
+&lt;div class=&quot;icon-bar&quot;&gt;
+&lt;i class=&quot;fa fa-heart&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;fa fa-share-alt&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;fa fa-ellipsis-v&quot;&gt;&lt;/i&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+
+
+<section class="component">
+  <h2>Horizontal Cards</h2>
+  <section class="demo">
+    <div class="flex-row">
+      <div class="card img-card card-horizontal">
+      <div class="text-overlay"><span class="overlay-content">Loading ...</span></div>
+        <span class="badge btn-round-md">X</span>
+        <div class="card-img">
+          <img src="https://picsum.photos/200/300" />
+        </div>
+        <div class="horizontal-content">        
+        <div class="card-title">Hello world
+        </div>
+        <div class="card-content">
+          lorem ipsum dolor set imaat. lorem ipsum dolor set imaat. lorem ipsum
+          dolor set imaat
+        </div>
+        <div class="card-footer">
+          <span>like</span><span>comment</span>
+          <div class="icon-bar">
+            <i class="fa fa-heart"></i><i class="fa fa-share-alt"></i
+            ><i class="fa fa-ellipsis-v"></i>
+          </div>
+        </div></div>
+      </div>
+      </div>
+                </section>
+</section>
+<pre>
+<code class="language-html">
+  &lt;div class=&quot;card img-card card-horizontal&quot;&gt;
+  &lt;div class=&quot;text-overlay&quot;&gt;&lt;span class=&quot;overlay-content&quot;&gt;Loading ...&lt;/span&gt;&lt;/div&gt;
+    &lt;span class=&quot;badge btn-round-md&quot;&gt;X&lt;/span&gt;
+    &lt;div class=&quot;card-img&quot;&gt;
+      &lt;img src=&quot;https://picsum.photos/200/300&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;horizontal-content&quot;&gt;        
+    &lt;div class=&quot;card-title&quot;&gt;Hello world
+    &lt;/div&gt;
+    &lt;div class=&quot;card-content&quot;&gt;
+      lorem ipsum dolor set imaat. lorem ipsum dolor set imaat. lorem ipsum
+      dolor set imaat
+    &lt;/div&gt;
+    &lt;div class=&quot;card-footer&quot;&gt;
+      &lt;span&gt;like&lt;/span&gt;&lt;span&gt;comment&lt;/span&gt;
+      &lt;div class=&quot;icon-bar&quot;&gt;
+        &lt;i class=&quot;fa fa-heart&quot;&gt;&lt;/i&gt;&lt;i class=&quot;fa fa-share-alt&quot;&gt;&lt;/i
+        &gt;&lt;i class=&quot;fa fa-ellipsis-v&quot;&gt;&lt;/i&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/div&gt;
+  &lt;/div&gt;
+</code>
+</pre>
+
+           <footer>
+            <a class="prev" href="../button/button.html"> Button </a>
+            <a class="next" href="../grid/grid.html"> Grid </a>
+          </footer>
+</div>
+</main>
+<script src="../../../prism/prism.js"></script>
   </body>
+  
 </html>
