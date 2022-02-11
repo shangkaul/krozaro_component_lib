@@ -187,7 +187,6 @@ footer{
     border: 1px solid var(--color-bg);
     padding: var(--space-md);
     background-color: var(--color-bg);
-    min-height: 20vh;
 }
 .color-block{
     width: 100%;
@@ -240,4 +239,8 @@ footer{
     background-color: var(--color-primary);
     color:white;
     text-align: center;
+}
+
+.textbox{
+    max-width: 50%;
 }
