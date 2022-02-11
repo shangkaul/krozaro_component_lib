@@ -47,3 +47,16 @@ A lean and efficient component library built on vanilla CSS.
   - Collapsible
 - Rating
 - Toast (Snackbar)   
+
+## Installation Instructions :
+Just add this stylesheet - ```https:krozaro.netlify.app/src/krozaro.styles.min.css``` to the head tag of your html file.<br/>
+For more info :[https://krozaro.netlify.app/installation.html](Link)
+
+## Dependencies:
+The library internally uses these open source items, you don't need to import them explicitly to your project.
+- FontAwesome
+- Google Font - Roboto
+- Google Font - Montserrat
+<br/>
+
+This is an open source library, so feel free to fork the repo and modify it as per your project needs!
