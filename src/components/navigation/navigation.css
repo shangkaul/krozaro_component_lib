@@ -6,6 +6,8 @@ nav{
     height: 4rem;
     align-items: center;
     color: var(--gray-text);
+    width: 100%;
+    background-color: white;
 }
 .nav-group{
     display: flex;
