@@ -67,6 +67,11 @@ background-color: var(--color-success);
     height: var(--space-xxl);
     width: var(--space-xxl);
   }
+  .btn-round-md{
+    border-radius: var(--radius-full);
+    height: var(--space-xl);
+    width: var(--space-xl);
+  }
   .btn-disabled{
     background-color: var(--btn-disabled);
     pointer-events: none;

@@ -42,6 +42,37 @@
     right: -0.9rem;
   }
 
+
+
+
+
+  .badge-text{
+    position: relative;
+    font-size: inherit;
+    padding: var(--space-xs);
+    background-color: var(--color-primary);
+    color: white;
+    z-index: 1;
+    border-radius: inherit;
+    
+  }
+
+  .badge-text::after{
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 100%;
+    top:0;
+    right: -1.2em;
+    background-color: inherit;
+    -webkit-transform: skew(-45deg, 0deg);
+    -moz-transform:skew(-45deg, 0deg);
+    -o-transform:skew(-45deg, 0deg);
+    -ms-transform:skew(-45deg, 0deg);
+    transform: skew(-45deg, 0deg);
+    z-index: -1;
+  }
+
   .badge-inactive{
     background-color: var(--color-error);
   }
