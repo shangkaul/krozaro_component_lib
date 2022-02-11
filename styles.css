@@ -248,6 +248,6 @@ footer{
 
 .k-list{
     border-radius: var(--radius-sm);
-    border: 1px solid var(--gray-text);
+    box-shadow: var(--shadow-md);
     background-color: white;
 }
