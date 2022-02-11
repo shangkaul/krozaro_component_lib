@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Krozaro</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../../krozaro.styles.min.css" />
+    <link rel="stylesheet" href="../../../styles.css" />
+    <link href="../../../prism/prism.css" rel="stylesheet" />
+    <link rel="icon" href="../../img/favicon.ico" type="image/icon">
+    <script>
+      const showModal = () => document.getElementById("modal-container").style.display="unset";
+
+      const closeModal = () => document.getElementById("modal-container").style.display = "none";
+
+    </script>
+  </head>
+
+  <body class="menuGrid">
+<aside class="sidebar-container">
+    
+    <a href="../../../index.html" class="docs-logo">
+        <img src="../../img/docs-logo.png"/>
+    </a>
+
+    <div class="sidebar">
+      <li class="list-head">Getting Started</li> 
+      <a href="../../../docs.html"><li>Introduction</li></a>
+      <a href="../../../installation.html"> <li>Installation</li></a>
+       <a href="../../../typo.html"> <li>Typography</li></a>
+       <a href="../../../theme.html"> <li>Theme</li></a>
+      
+      <li class="list-head">UI Components</li>      
+       <a href="../alert/alert.html"> <li>Alert</li></a>
+      
+      <a href="../avatar/avatar.html"><li> Avatar</li></a>
+       <a href="../badge/badge.html"> <li>Badge</li></a>
+       <a href="../button/button.html"> <li>Button</li></a>
+       <a href="../card/card.html"> <li>Card</li></a>
+       <a href="../grid/grid.html"> <li>Grid</li></a>
+       <a href="../image/image.html"> <li>Image</li></a>
+       <a href="../input/input.html"> <li>Input</li></a>
+       <a href="../lists/lists.html"> <li>Lists</li></a>
+       <a href="../modal/modal.html"> <li class="active">Modal</li></a>
+       <a href="../navigation/navigation.html"><li>Navigation</li></a>
+       <a href="../rating/rating.html"> <li>Rating</li></a>
+       <a href="../toast/toast.html"> <li>Toast</li></a>
+      </div>
+</aside>
+<main class="doc-main"> 
+    <nav>
+        <ul class="nav-group start">
+          <li> <a href="../../../docs.html">Getting Started</a></li>
+            <li class="nav-active"><a href="../avatar/avatar.html">UI Components</a></li>
+        </ul>
+        <ul class="nav-group end">
+        <li><a href="https://github.com/shangkaul/krozaro_component_lib"><i class="icon icon-md fa fa-github"></i></a></li>
+        <li></li>
+    </ul>
+    
+    </nav>
+    <div class="doc-content">
+        <section class="component">
+            <h1>Modal</h1>
+          <p class="md"> A modal is a dialog that presents users with information, messages. 
+            A modal appears on top of the web app's content and must be manually dismissed before user can resume
+            interacting with the app.
+          </p>  
+          </section>
+<h2>Demo</h2>
+            <section class="demo"><div class="flex-row">
+              <button id="call-modal" class="btn" onclick="showModal()">Show modal</button></div>
+          </section>
+          <div class="container modal" id="modal-container">
+            <div class="container-title">Modal Heading!</div>
+            <div class="container-content">Modal text description.</div>
+            <div class="container-footer">
+              <button class="btn btn-full-width" onclick="closeModal()">Dismiss</button>
+            </div></div>
+
+           <h2>HTML</h2>
+            <pre>
+              <code class="language-html">
+&lt;div class=&quot;container modal&quot; id=&quot;modal-container&quot;&gt;
+&lt;div class=&quot;container-title&quot;&gt;Modal Heading!&lt;/div&gt;
+&lt;div class=&quot;container-content&quot;&gt;Modal text description.&lt;/div&gt;
+&lt;div class=&quot;container-footer&quot;&gt;
+&lt;button class=&quot;btn btn-full-width&quot; onclick=&quot;closeModal()&quot;&gt;Dismiss&lt;/button&gt;
+&lt;/div&gt;&lt;/div&gt;
+              </code>
+            </pre>
+<h2>JS</h2>
+<pre>
+  <code class="language-js">
+const showModal = () => document.getElementById("modal-container").style.display="unset";
+const closeModal = () => document.getElementById("modal-container").style.display = "none";
+
+  </code>
+</pre>
+           <footer>
+            <a class="prev" href="../lists/lists.html"> Lists </a>
+            <a class="next" href="../navigation/navigation.html"> Navigation </a>
+          </footer>
+</div>
+</main>
+<script src="../../../prism/prism.js"></script>
+  </body>
+  
+</html>

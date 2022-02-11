@@ -239,8 +239,14 @@ footer{
     background-color: var(--color-primary);
     color:white;
     text-align: center;
+
 }
 
 .textbox{
     max-width: 50%;
+}
+
+.k-list{
+    border-radius: var(--radius-sm);
+    background-color: white;
 }
