@@ -3,6 +3,7 @@
   grid-auto-rows: min-content;
   width: 100%;
   padding: var(--space-xs);
+  box-shadow: var(--shadow-md);
 }
 
 .list-item{
