@@ -250,3 +250,11 @@ footer{
     border-radius: var(--radius-sm);
     background-color: white;
 }
+
+.rating-container{
+    background-color: var(--white);
+    padding: var(--space-md);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-md);
+    font-size: var(--text-md);
+}

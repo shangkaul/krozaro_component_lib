@@ -1,0 +1,10 @@
+.rating-container{
+  color: var(--gray-text);
+}
+.star:hover{
+  cursor: pointer;
+  color: var(--color-primary);
+}
+.star-active{
+  color: var(--color-primary);
+}
