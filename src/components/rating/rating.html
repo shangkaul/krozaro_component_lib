@@ -55,29 +55,35 @@
     <div class="doc-content">
         <section class="component">
             <h1>Rating</h1>
-          <p class="md"> A modal is a dialog that presents users with information, messages. 
-            A modal appears on top of the web app's content and must be manually dismissed before user can resume
-            interacting with the app.
+          <p class="md"> A simple rating component used for rating object, items as per your use case.
+            The component has active/inactive stars which are toggled on click.
           </p>  
           </section>
-<h2>Demo</h2>
+
             <section class="demo"><div class="flex-row">
-              <button id="call-modal" class="btn" onclick="showModal()">Show modal</button></div>
+              <div class="rating-container">
+                <span id="star-1" class="star star-active"><i class="fa fa-star"></i></span>
+                <span id="star-2" class="star star-active"><i class="fa fa-star"></i></span>
+                <span id="star-3" class="star star-active"><i class="fa fa-star"></i></span>
+                <span id="star-4" class="star"><i class="fa fa-star"></i></span>
+                <span id="star-5" class="star"><i class="fa fa-star"></i></span>
+              </div>
           </section>
 
             <pre>
               <code class="language-html">
-&lt;div class=&quot;container modal&quot; id=&quot;modal-container&quot;&gt;
-&lt;div class=&quot;container-title&quot;&gt;Modal Heading!&lt;/div&gt;
-&lt;div class=&quot;container-content&quot;&gt;Modal text description.&lt;/div&gt;
-&lt;div class=&quot;container-footer&quot;&gt;
-&lt;button class=&quot;btn btn-full-width&quot; onclick=&quot;closeModal()&quot;&gt;Dismiss&lt;/button&gt;
-&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;rating-container&quot;&gt;
+&lt;span id=&quot;star-1&quot; class=&quot;star star-active&quot;&gt;&lt;i class=&quot;fa fa-star&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+&lt;span id=&quot;star-2&quot; class=&quot;star star-active&quot;&gt;&lt;i class=&quot;fa fa-star&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+&lt;span id=&quot;star-3&quot; class=&quot;star star-active&quot;&gt;&lt;i class=&quot;fa fa-star&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+&lt;span id=&quot;star-4&quot; class=&quot;star&quot;&gt;&lt;i class=&quot;fa fa-star&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+&lt;span id=&quot;star-5&quot; class=&quot;star&quot;&gt;&lt;i class=&quot;fa fa-star&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+&lt;/div&gt;
               </code>
             </pre>
            <footer>
-            <a class="prev" href="../lists/lists.html"> Lists </a>
-            <a class="next" href="../navigation/navigation.html"> Navigation </a>
+            <a class="prev" href="../navigation/navigation.html"> Navigation </a>
+            <a class="next" href="../toast/toast.html"> Toast </a>
           </footer>
 </div>
 </main>
