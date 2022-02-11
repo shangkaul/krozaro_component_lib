@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -31,8 +32,8 @@
  <a href="../button/button.html"> <li>Button</li></a>
  <a href="../card/card.html"> <li>Card</li></a>
  <a href="../grid/grid.html"> <li>Grid</li></a>
- <a href="../image/image.html"> <li class="active">Image</li></a>
- <a href="../input/input.html"> <li>Input</li></a>
+ <a href="../image/image.html"> <li>Image</li></a>
+ <a href="../input/input.html"> <li class="active">Input</li></a>
  <a href="../lists/lists.html"> <li>Lists</li></a>
  <a href="../modal/modal.html"> <li>Modal</li></a>
  <a href="../navigation/navigation.html"><li>Navigation</li></a>
@@ -54,60 +55,31 @@
     </nav>
     <div class="doc-content">
         <section class="component">
-            <h1>Image</h1>
-          <p class="md"> Images are an important aspect of any UI design. Krozaro provides you with an image component
-            that can help quickly add responsive images that render as per device resolution.
+            <h1>Input</h1>
+          <p class="md"> The input element is a modification on the standard HTML imput element. 
+            It used to accept data from the user. The data can be of type email, text, number,tel,url etc.
           </p>  
           </section>
 
           <section class="component">
-            <h2>Responsive Image</h2>
-            <p class="md"> This image is both responsive and also resizes itself as per the size of the parent container.</p>
             <section class="demo">
               <div class="flex-col">
-                <img alt="sample-img" src="https://picsum.photos/900/300" />
+              <input class="textbox" placeholder="Simple Input"/>
+              <input class="textbox textbox-success" placeholder="Success"/>
+              <input class="textbox textbox-fail" placeholder="Fail"/>
 
               </div>
             </section>
           </section>
 <pre>
   <code class="language-html">
-&lt;img alt="sample-img" src=&quot;https://picsum.photos/900/300&quot; /&gt;                       
-  </code>
-</pre>
-
-<section class="component">
-    <h2>Square Image</h2>
-    <section class="demo">
-      <div class="flex-col">
-        <img alt="sample-img" class="img-square" src="https://picsum.photos/900/600" />
-        
-      </div>
-    </section>
-  </section>
-<pre>
-<code class="language-html">
-&lt;img alt="sample-img" class=&quot;img-square&quot; src=&quot;https://picsum.photos/900/600&quot; /&gt;
-</code>
-</pre>
-
-<section class="component">
-    <h2>Grid with 3 equal items</h2>
-    <section class="demo">
-      <div class="flex-col">
-      <img alt="sample-img" class="img-round" src="https://picsum.photos/900/600" />
-        
-      </div>
-    </section>
-  </section>
-<pre>
-<code class="language-html">
-  &lt;img alt="sample-img" class=&quot;img-round&quot; src=&quot;https://picsum.photos/900/600&quot; /&gt;
-</code>
+&lt;input class=&quot;textbox&quot; placeholder=&quot;Simple Input&quot;/&gt;
+&lt;input class=&quot;textbox textbox-success&quot; placeholder=&quot;Success&quot;/&gt;
+&lt;input class=&quot;textbox textbox-fail&quot; placeholder=&quot;Fail&quot;/&gt;  </code>
 </pre>
            <footer>
-            <a class="prev" href="../grid/grid.html"> Grid </a>
-            <a class="next" href="../input/input.html"> Input </a>
+            <a class="prev" href="../image/image.html"> Image </a>
+            <a class="next" href="../list/list.html"> List </a>
           </footer>
 </div>
 </main>
@@ -116,3 +88,21 @@
   
 </html>
 
+
+
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <title>Krozaro</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../../krozaro.styles.min.css" />
+
+  </head>
+  <body>
+    <div class="container">
+      <input class="textbox textbox-success" />
+      <input class="textbox textbox-fail" />
+      <input class="textbox" />
+    </div>
+  </body>
+</html> -->

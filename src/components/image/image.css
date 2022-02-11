@@ -6,3 +6,7 @@ img {
     border-radius: 50%;
     aspect-ratio: 1;
   }
+
+  .img-square{
+    aspect-ratio: 1;
+  }
