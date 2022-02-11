@@ -1,0 +1,28 @@
+
+    .toast {
+      position: absolute;
+      margin:0 auto;
+      left:0;
+      right:0;
+      bottom: 0.5rem;
+      width: 50vw;
+      z-index: 1;
+      max-width: 20rem;
+      display: flex;
+      flex-direction: row;
+      background-color: var(--gray-text);
+      color: white;
+      padding: var(--space-sm);
+    }
+.toast-close{
+  color: white;
+  margin-left: auto;
+}
+.toast-close:hover{
+  cursor: pointer;
+  box-shadow: var(--shadow-md);
+}
+#toast-container{
+  display: none;
+  transition: 0.5s;
+}
