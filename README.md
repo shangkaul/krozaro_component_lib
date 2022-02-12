@@ -50,7 +50,7 @@ A lean and efficient component library built on vanilla CSS.
 
 ## Installation Instructions :
 Just add this stylesheet - ```https:krozaro.netlify.app/src/krozaro.styles.min.css``` to the head tag of your html file.<br/>
-For more info :[https://krozaro.netlify.app/installation.html](Link)
+For more info :[Link](https://krozaro.netlify.app/installation.html)
 
 ## Dependencies:
 The library internally uses these open source items, you don't need to import them explicitly to your project.
