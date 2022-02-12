@@ -80,3 +80,7 @@ background-color: var(--color-success);
   box-shadow: none;
 }
 
+.btn:active{
+  transform: translateY(-0.5rem);
+}
+

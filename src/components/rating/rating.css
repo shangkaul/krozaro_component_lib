@@ -1,9 +1,8 @@
 .rating-container{
   color: var(--gray-text);
 }
-.star:hover{
+.star:hover , .star:hover:before{
   cursor: pointer;
-  color: var(--color-primary);
 }
 .star-active{
   color: var(--color-primary);
